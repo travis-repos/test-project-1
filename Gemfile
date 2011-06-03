@@ -1,2 +1,2 @@
 source :rubygems
-gem 'mocha'
+gem 'rake'
