@@ -1,7 +1,8 @@
 require 'rake'
 
 task :test do
-  1.upto(500) do
+  puts "Using RUBY_VERSION: #{RUBY_VERSION}"
+  1.upto(100) do
     sleep(0.01)
     putc '.'
     $stdout.flush
