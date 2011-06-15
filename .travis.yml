@@ -1,2 +1,4 @@
 notifications:
-  disabled: true
+  recipients:
+    - svenfuchs@artweb-design.de
+    - josh.kalderimis@gmail.com
