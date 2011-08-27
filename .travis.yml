@@ -1,6 +1,6 @@
-branches:
-  except:
-    - master
+# branches:
+#   except:
+#     - master
 
 # before_script: "echo foo; sleep 200"
 notifications:
