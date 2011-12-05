@@ -1,7 +1,6 @@
-# branches:
-#   except:
-#     - master
-
-# before_script: "echo foo; sleep 200"
+branches:
+  only: master
 notifications:
-  disabled: true
+  email: false
+  webhooks: 
+    - http://www.postbin.org/1cig81y
