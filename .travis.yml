@@ -2,6 +2,6 @@ branches:
   only: master
 notifications:
   email: svenfuchs@artweb-design.de
-  irc: "irc.freenode.org#travis"
+  irc: "irc.freenode.org#travis-staging"
   webhooks: 
     - http://www.postbin.org/1cig81y
