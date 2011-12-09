@@ -1,7 +1,7 @@
 require 'rake'
 
 task :test do
-  1.upto(10000) do
+  1.upto(1000) do
     sleep(0.01)
     putc '.'
     $stdout.flush
