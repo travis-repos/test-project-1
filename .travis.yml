@@ -1,6 +1,7 @@
 branches:
   only: master
 notifications:
-  email: false
+  email: svenfuchs@artweb-design.de
+  irc: "irc.freenode.org#travis"
   webhooks: 
     - http://www.postbin.org/1cig81y
