@@ -4,6 +4,6 @@ notifications:
   email: svenfuchs@artweb-design.de
   irc: 
     channels: "irc.freenode.org#travisstaging"
-    template: "(STAGING) %{repository_url} (%{commit_short}): %{message}"
+    template: "(STAGING) %{repository_url} (%{commit}): %{message}"
   webhooks: 
     - http://www.postbin.org/1cig81y
