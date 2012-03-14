@@ -3,7 +3,7 @@ branches:
 notifications:
   email: svenfuchs@artweb-design.de
   irc: 
-    channel: "irc.freenode.org#travis-staging"
+    channels: "irc.freenode.org#travis-staging"
     template: 
       - "(STAGING) %{repository_url} (%{commit}): %{message}"
   webhooks: 
