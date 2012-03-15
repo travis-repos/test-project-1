@@ -1,7 +1,7 @@
 branches:
   only: master
 notifications:
-  email: svenfuchs@artweb-design.de
+  email: false
   irc: 
     channels: "irc.freenode.org#travisstaging"
     template: "(STAGING) %{repository_url} (%{commit}): %{message}"
