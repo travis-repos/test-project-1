@@ -4,6 +4,6 @@ notifications:
   email: false
   irc: 
     channels: "irc.freenode.org#travisstaging"
-    template: "(STAGING) %{repository_url} (%{commit}): %{message}"
+    template: "(STAGING) %{repository_url} (%{commit}) %{build_url} : %{message}"
   webhooks: 
     - http://www.postbin.org/1cig81y
