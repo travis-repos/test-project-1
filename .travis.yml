@@ -6,4 +6,5 @@ notifications:
     channels: "irc.freenode.org#travisstaging"
     template: "(STAGING) %{repository_url} (%{commit}) %{build_url} : %{message}"
   webhooks: 
-    - http://www.postbin.org/1cig81y
+    urls: http://www.postbin.org/1cig81y
+    on_start: always
