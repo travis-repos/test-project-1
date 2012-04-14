@@ -1,4 +1,4 @@
-require 'rake' # oh yeah
+require 'rake' # oh yeah!!
 
 task :test do
   1.upto(100) do
