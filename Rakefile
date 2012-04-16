@@ -1,5 +1,5 @@
 task :test do
-  1.upto(99) do
+  1.upto(101) do
     sleep(0.01)
     print '.'
   end
