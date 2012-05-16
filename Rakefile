@@ -4,7 +4,7 @@ task :test do
     print '..'
   end
   puts
-  exit 1
+  exit 0
 end
 
 task :default => :test
