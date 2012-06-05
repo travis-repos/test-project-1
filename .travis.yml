@@ -4,7 +4,7 @@ notifications:
   email: me@svenfuchs.com
   irc: 
     channels: "irc.freenode.org#travisstaging"
-    template: "(STAGING) %{repository_url} (%{commit}) %{build_url} : %{message}"
+    template: "[STAGING] %{repository_url} (%{commit}) %{build_url} : %{message}"
   webhooks: 
     urls: http://www.postbin.org/1cig81y
     # on_start: always
