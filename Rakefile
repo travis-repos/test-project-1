@@ -1,13 +1,10 @@
-require 'rake'
-
 task :test do
-  1.upto 100 do
+  1.upto(100) do
     sleep(0.01)
-    putc '.'
-    puts 'rake is not part of the bundle'
-    $stdout.flush
+    print '...'
   end
-  exit 1
+  puts
+  exit 42
 end
 
 task :default => :test
