@@ -5,7 +5,7 @@ task :test do
     sleep(0.01); putc '.'
     $stdout.flush
   end
-  exit 0
+  exit 42
 end
 
 task :default => :test
