@@ -11,3 +11,7 @@ notifications:
 env:
   - ["FOO=bar", {secure: "bhGTo2IhH2fQdHcVuZDO6okHAL68K/XGxACqfmHtdbLQP2xbuqiHyfpTADJW\n04sB32KZM89gpIgLappuUuvmJlxPCfCmW6NgLyQSUIOkYOlOCfx8I2T84IZ3\n+yBgkVDN+roQDEccDu2w8wPUm7bATeIP7v0i3ZmlVpXerLg4ulQ="}]
   - ["BAR=bar", {secure: "bhGTo2IhH2fQdHcVuZDO6okHAL68K/XGxACqfmHtdbLQP2xbuqiHyfpTADJW\n04sB32KZM89gpIgLappuUuvmJlxPCfCmW6NgLyQSUIOkYOlOCfx8I2T84IZ3\n+yBgkVDN+roQDEccDu2w8wPUm7bATeIP7v0i3ZmlVpXerLg4ulQ="}]
+  -
+matrix:
+  exclude:
+    env:
