@@ -15,3 +15,5 @@ notifications:
 matrix:
   exclude:
     env:
+addons: 
+  - pull_requests
