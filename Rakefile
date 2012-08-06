@@ -9,7 +9,7 @@ task :test do
   end
   puts 'how deep is your love, i really need to know', ''
   sleep 1
-  puts 'about 50 meters'
+  puts 'about 100 meters'
   exit 0
 end
 
