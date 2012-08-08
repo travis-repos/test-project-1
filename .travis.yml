@@ -8,12 +8,12 @@ notifications:
   webhooks:
     urls: http://www.postbin.org/1cig81y
     # on_start: always
-#env:
-#  - ["FOO=bar", {secure: "bhGTo2IhH2fQdHcVuZDO6okHAL68K/XGxACqfmHtdbLQP2xbuqiHyfpTADJW\n04sB32KZM89gpIgLappuUuvmJlxPCfCmW6NgLyQSUIOkYOlOCfx8I2T84IZ3\n+yBgkVDN+roQDEccDu2w8wPUm7bATeIP7v0i3ZmlVpXerLg4ulQ="}]
-#  - ["BAR=bar", {secure: "bhGTo2IhH2fQdHcVuZDO6okHAL68K/XGxACqfmHtdbLQP2xbuqiHyfpTADJW\n04sB32KZM89gpIgLappuUuvmJlxPCfCmW6NgLyQSUIOkYOlOCfx8I2T84IZ3\n+yBgkVDN+roQDEccDu2w8wPUm7bATeIP7v0i3ZmlVpXerLg4ulQ="}]
-#  -
-matrix:
-  exclude:
-    env:
-addons: 
+env:
+  global:
+    - "FOO=bar"
+    - [{secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="}]
+  matrix:
+    - "BAR=baz"
+    - [{secure: "pQyk7TQ9m8foPp3WBfSQte/Yno7eTUE+n/tO+Sd1jLLD7wWqBmNPWPyXm10L\nRegcCN5c4YDC3XXYZAJof3VtbvqKoQ3yGXklYaszyYbcXKreSDxBOS6LwMyU\nHxGRrld+7R6NcRTU3OKNBR+i8tV7u2keckR1qNRClQVMmCyNemI="}]
+addons:
   - pull_requests
