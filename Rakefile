@@ -2,13 +2,13 @@ require 'rake' # we need rake!!
 
 task :test do
   puts 'how deep is your love, '
-  1.upto 15 do
-    sleep(0.01)
+  1.upto 150 do
+    sleep(0.1)
     print 'your love, '
     $stdout.flush
   end
   puts 'how deep is your love, i really need to know', ''
-  sleep 1
+  sleep 3
   puts 'about 50 meters'
   exit 0
 end
