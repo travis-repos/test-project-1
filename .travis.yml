@@ -11,9 +11,9 @@ notifications:
 env:
   global:
     - "FOO=bar"
-    - [{secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="}]
+    - secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="
   matrix:
     - "BAR=baz"
-    - [{secure: "pQyk7TQ9m8foPp3WBfSQte/Yno7eTUE+n/tO+Sd1jLLD7wWqBmNPWPyXm10L\nRegcCN5c4YDC3XXYZAJof3VtbvqKoQ3yGXklYaszyYbcXKreSDxBOS6LwMyU\nHxGRrld+7R6NcRTU3OKNBR+i8tV7u2keckR1qNRClQVMmCyNemI="}]
+    - secure: "pQyk7TQ9m8foPp3WBfSQte/Yno7eTUE+n/tO+Sd1jLLD7wWqBmNPWPyXm10L\nRegcCN5c4YDC3XXYZAJof3VtbvqKoQ3yGXklYaszyYbcXKreSDxBOS6LwMyU\nHxGRrld+7R6NcRTU3OKNBR+i8tV7u2keckR1qNRClQVMmCyNemI="
 addons:
   - pull_requests
