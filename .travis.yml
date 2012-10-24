@@ -11,3 +11,7 @@ notifications:
 env:
   - secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="
 
+matrix:
+  include:
+    - rvm: 1.9.3
+    - env: ''
