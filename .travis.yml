@@ -1,12 +1,15 @@
 branches:
   only: master
 notifications:
-  # email: me@svenfuchs.com
+  email: me@svenfuchs.com
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
-  # webhooks:
-  #  urls: http://www.postbin.org/1cig81y
-  #   # on_start: always
+  flowdock: e533e9b0984a1cc7650579ab7aaab158
+  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
+  webhooks:
+    urls: http://requestb.in/10wjmvl1
+      on_start: always
+      on_finish: always
 env:
   - secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="
