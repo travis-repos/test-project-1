@@ -9,7 +9,5 @@ notifications:
   hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
   webhooks:
     urls: http://requestb.in/10wjmvl1
-      on_start: always
-      on_finish: always
-env:
-  - secure: "eh87ToNrBEfMUAtzSUreyE/YxhXf+rEtmJkMSNFfEai9/XdIopbPHoWKLz+h\nfLLejLYTw2m5ifuccPUukdJBbztzaM/i8Pv3FHdWsezH8MUWJTRMYE9Iu1xJ\ng6AgPkof5HarRtpNhWi356IaRbjmrQJHdnx4PXRNjMCm4Fryr00="
+    on_start: always
+    on_finish: always
