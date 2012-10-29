@@ -11,3 +11,7 @@ notifications:
     urls: http://requestb.in/10wjmvl1
     on_start: always
     on_finish: always
+
+env:
+  global:
+    - FOO: bar
