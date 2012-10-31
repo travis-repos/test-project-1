@@ -3,7 +3,7 @@ require 'rake' # we need rake!!
 task :test do
   p ENV
   puts 'how deep is your love, '
-  1.upto 250 do
+  1.upto 5000 do
     #sleep(0.1)
     puts 'your love, '
     $stdout.flush
