@@ -12,6 +12,6 @@ notifications:
     on_start: always
     on_finish: always
 
-env:
-  global:
-    - FOO: bar
+# env:
+#   global:
+#     - FOO: bar
