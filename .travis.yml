@@ -1,17 +1,21 @@
+language: python
+python:
+  - "2.6"
 branches:
   only: master
-notifications:
-  # email: me@svenfuchs.com
-  irc:
-    channels: "irc.freenode.org#travisstaging"
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
-  flowdock: e533e9b0984a1cc7650579ab7aaab158
-  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
-  webhooks:
-    urls: http://requestb.in/10wjmvl1
-    on_start: always
-    on_finish: always
-
+script: 'echo 1'
+#notifications:
+#  # email: me@svenfuchs.com
+#  irc:
+#    channels: "irc.freenode.org#travisstaging"
+#    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
+#  flowdock: e533e9b0984a1cc7650579ab7aaab158
+#  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
+#  webhooks:
+#    urls: http://requestb.in/10wjmvl1
+#    on_start: always
+#    on_finish: always
+#
 # env:
 #   global:
 #     - FOO: bar
