@@ -3,6 +3,7 @@ require 'rake' # we need rake!!
 task :test do
   1.upto 20 do
     print '.'
+    sleep 1
   end
   puts ''
 
