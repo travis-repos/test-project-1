@@ -1,7 +1,11 @@
 require 'rake' # we need rake!!
 
 task :test do
-  p ENV
+  1.upto 20 do
+    print '.'
+  end
+  puts ''
+
   puts 'how deep is your love, '
   1.upto 20 do
     sleep(1)
