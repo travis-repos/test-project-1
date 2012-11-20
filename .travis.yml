@@ -19,6 +19,10 @@ notifications:
     on_start: always
     on_finish: always
 
+after_test:
+  - "echo 'Yupi\!\!\!\!\!'"
+  - "echo 'Splendid\!'"
+
 # env:
 #   global:
 #     - FOO: bar
