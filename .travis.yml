@@ -19,6 +19,12 @@ notifications:
     on_start: always
     on_finish: always
 
+after_success:
+  - "echo 'After success'"
+
+after_success:
+  - "echo 'After failure'"
+
 after_test:
   - "echo 'Yupi\!\!\!\!\!'"
   - "echo 'Splendid\!'"
