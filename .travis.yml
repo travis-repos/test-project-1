@@ -15,6 +15,9 @@ notifications:
     on_start: always
     on_finish: always
 
+after_script:
+  - "echo 'After script'"
+
 after_success:
   - "echo 'After success'"
 
