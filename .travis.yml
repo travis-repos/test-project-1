@@ -17,6 +17,7 @@ notifications:
 
 before_script:
   - "echo 'Before script'"
+  - rake
 
 after_script:
   - "echo 'After script'"
