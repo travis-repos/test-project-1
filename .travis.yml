@@ -16,6 +16,7 @@ notifications:
     on_finish: always
 
 before_script:
+  - 'wget http://phantomjs.googlecode.com/files/phantomjs-1.7.0-linux-i686.tar.bz2'
   - "echo 'Before script'"
   - rake
 
