@@ -17,7 +17,7 @@ notifications:
 
 before_script:
   - "echo 'Before script'"
-  - "sudo service postgresql restart"
+#  - "sudo service postgresql restart"
 
 after_script:
   - "echo 'After script'"
