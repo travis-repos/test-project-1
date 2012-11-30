@@ -15,6 +15,10 @@ notifications:
     on_start: always
     on_finish: always
 
+script:
+  - rake
+  - bundle exec rspec spec
+
 before_script:
   - "echo 'Before script'"
 #  - "sudo service postgresql restart"
