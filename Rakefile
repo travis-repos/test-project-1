@@ -18,8 +18,6 @@ task :test do
   #sleep 3
   puts 'about 500 miles, and about 500 more'
   exit 0
-
-  `rspec --format NyanCatFormatter`
 end
 
 task :default => :test

@@ -16,12 +16,12 @@ notifications:
     on_finish: always
 
 script:
-  - bundle exec rspec spec
+#  - bundle exec rspec spec
   - rake
 
 before_script:
   - "echo 'Before script'"
-#  - "sudo service postgresql restart"
+  - "sudo service postgresql restart"
 
 after_script:
   - "echo 'After script'"
