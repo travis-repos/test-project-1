@@ -1,7 +1,6 @@
 require 'rake' # we need rake!!
 
 task :test do
-  puts '.' * 45000
   1.upto 20 do
     print '.'
     sleep 0.1
@@ -17,7 +16,7 @@ task :test do
   puts "how deep is your love, i really need to know\u001b[0m", ''
   #sleep 3
   puts 'about 500 miles, and about 500 more'
-  exit 0
+  exit 1
 end
 
 task :default => :test
