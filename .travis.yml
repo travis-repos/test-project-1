@@ -29,7 +29,7 @@ after_script:
 after_success:
   - "echo 'After success'"
 
-after_success:
+after_failure:
   - "echo 'After failure'"
 
 after_test:
