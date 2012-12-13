@@ -25,17 +25,13 @@ before_script:
 
 after_script:
   - "echo 'After script'"
+  - printenv
 
 after_success:
   - "echo 'After success'"
 
 after_failure:
   - "echo 'After failure'"
-
-after_test:
-  - "echo 'Yupi'"
-  - "echo 'Splendid'"
-  - printenv
 
 # env:
 #   global:
