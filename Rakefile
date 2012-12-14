@@ -7,6 +7,8 @@ task :test do
   end
   puts ''
 
+  puts '.' * 100000
+
   puts "\u001b[31mhow deep is your love, "
   1.upto 20 do
     sleep 0.3
