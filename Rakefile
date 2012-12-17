@@ -1,7 +1,7 @@
 require 'rake' # we need rake!!
 
 task :test do
-  1.upto 20 do
+  1.upto 100 do
     print '.'
     sleep 0.1
   end
