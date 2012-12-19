@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 branches:
-  only: master
+  only: gh-pages
 notifications:
   email: false
   irc:
