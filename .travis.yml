@@ -27,6 +27,7 @@ script:
   - rake
 
 before_script:
+  - "echo $FOO"
   - "echo 'Before script'"
   - "sudo service postgresql restart"
 
@@ -40,6 +41,6 @@ after_success:
 after_failure:
   - "echo 'After failure'"
 
-# env:
-#   global:
-#     - FOO: bar
+env:
+  global:
+    - secure: "XNC/pocPK7h1Ti+ZROAwTtnQpupAVjhMVY4nDMJvYLCaNnLyu37HqgLJcUm4\ns4+WKVz38MNOKnCWSBQyqdmc8YnfIl8Lm91ulAFJGRdTwCF5CEYeOy50TpqL\nhbgJUDDIi7xZq/WfIQKNoMUcXoJnwap37TKQhTr8ojnRnLMsOC4="
