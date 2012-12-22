@@ -7,20 +7,20 @@ branches:
     - gh-pages
 notifications:
   email: false
-  irc:
-    channels: "irc.freenode.org#travisstaging"
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
-  flowdock: e533e9b0984a1cc7650579ab7aaab158
-  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
-  campfire:
-    on_success: 'always'
-    on_failure: 'always'
-    rooms:
-      - secure: "wsimFvFeiaecL+H6f/c4omWkuU/fPnHPZMclWGkZUU6AGNpphuodyPJnFI63\nvGsIlcNcTTVUi0smmQJIVV3jQT9nU/Dr3ULodPD7Wj0NX6kkRFqAGgBJEZ1f\n/NwAlRXxg+Sx3HlGIUitsxILLGJ4lCWVRPPj7Ux63HRaA/MEWSs="
-  webhooks:
-    urls: http://requestb.in/1guktrt1
-    on_start: always
-    on_finish: always
+  # irc:
+  #   channels: "irc.freenode.org#travisstaging"
+  #   template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
+  # flowdock: e533e9b0984a1cc7650579ab7aaab158
+  # hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
+  # campfire:
+  #   on_success: 'always'
+  #   on_failure: 'always'
+  #   rooms:
+  #     - secure: "wsimFvFeiaecL+H6f/c4omWkuU/fPnHPZMclWGkZUU6AGNpphuodyPJnFI63\nvGsIlcNcTTVUi0smmQJIVV3jQT9nU/Dr3ULodPD7Wj0NX6kkRFqAGgBJEZ1f\n/NwAlRXxg+Sx3HlGIUitsxILLGJ4lCWVRPPj7Ux63HRaA/MEWSs="
+  # webhooks:
+  #   urls: http://requestb.in/1guktrt1
+  #   on_start: always
+  #   on_finish: always
 
 script:
 #  - bundle exec rspec spec
