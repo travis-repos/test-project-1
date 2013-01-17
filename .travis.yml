@@ -1,8 +1,6 @@
 language: ruby
 rvm:
   - 1.9.3
-branches:
-  only: gh-pages
 notifications:
   email: false
   irc:
@@ -37,6 +35,6 @@ after_test:
   - "echo 'Splendid'"
   - printenv
 
-# env:
-#   global:
-#     - FOO: bar
+env:
+  global:
+    - secure: "qnetQc+qVmtWxNjRbljrzoEhDG96XFmH/OjxL9BYt6QHkCKRaKGCWWkd9Fxj\nJeXEbwGzLaZfe0dV61BbcmT3SQCvfLkq9+pwqDVyXWpcJ67wRVXaPvGBaJwX\ncjb6km2ul/MtZlbazRVR306R9bloDEOlHKT03UBf6ELfip1iJRk="
