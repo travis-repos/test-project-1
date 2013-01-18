@@ -7,7 +7,7 @@ task :test do
   end
   puts ''
 
-  puts '.' * 100000
+  puts '.' * 100
 
   puts "\u001b[31mhow deep is your love, "
   1.upto 20 do
