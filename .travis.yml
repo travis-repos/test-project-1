@@ -37,4 +37,4 @@ after_test:
 
 env:
   global:
-    - secure: "qnetQc+qVmtWxNjRbljrzoEhDG96XFmH/OjxL9BYt6QHkCKRaKGCWWkd9Fxj\nJeXEbwGzLaZfe0dV61BbcmT3SQCvfLkq9+pwqDVyXWpcJ67wRVXaPvGBaJwX\ncjb6km2ul/MtZlbazRVR306R9bloDEOlHKT03UBf6ELfip1iJRk="
+    - secure: "W3U0VAIIvZqj4pNuKrbqdpC0FWELhnMpJZviZsoIayO9pX5ALmntkWSawh5d\nk5+ckAqGroeWkLpHDRC0Cxe0iVNSwunqngnKXMSz98H2Tx5lHv1nM52tALew\nlWmqzNJbaMgnAbUhq7HvV798PM+0Dihqy9ha6yEsFaSvc2G69Ts="
