@@ -25,6 +25,7 @@ notifications:
 script:
 #  - bundle exec rspec spec
   - rake
+  - echo "Svens got a lovely bunch of coconuts"
 
 before_script:
   - "echo $FOO"
