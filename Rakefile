@@ -7,7 +7,7 @@ task :test do
   end
   puts ''
 
-  30000.times do |i|
+  50000.times do |i|
     puts "This log will be very long and will most likely freeze the browser :( (#{i})"
   end
   puts '.' * 100
