@@ -44,4 +44,4 @@ after_failure:
 
 env:
   global:
-    - secure: "XNC/pocPK7h1Ti+ZROAwTtnQpupAVjhMVY4nDMJvYLCaNnLyu37HqgLJcUm4\ns4+WKVz38MNOKnCWSBQyqdmc8YnfIl8Lm91ulAFJGRdTwCF5CEYeOy50TpqL\nhbgJUDDIi7xZq/WfIQKNoMUcXoJnwap37TKQhTr8ojnRnLMsOC4="
+    - secure: "JHG1MTxDt3+a8Pee/qPLSq0n1z4S5TrV4+Zmy3OVMqJY6+45wMu4BB0gru89\nOPWQwe0ifm8IHehP5pUeqQegBAyUm9Iz6iDkL2nxcL0tPQe1rmFB9GrL2mmC\nxeoIgN7m5eJmgzhSJAfIXoHDr79sJx5DQnrc971C/xrA8nZHQoU="
