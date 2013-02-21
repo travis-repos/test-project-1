@@ -7,9 +7,9 @@ task :test do
   end
   puts ''
 
-  50000.times do |i|
-    puts "This log will be very long and will most likely freeze the browser :( (#{i})"
-  end
+  # 50000.times do |i|
+  #   puts "This log will be very long and will most likely freeze the browser :( (#{i})"
+  # end
   puts '.' * 100
 
   puts "\u001b[31mhow deep is your love, "
