@@ -22,17 +22,17 @@ puts 'progress on one same line (slower)'
   print "#{i}|"; sleep(0.5)
 end
 
-puts; puts
-puts 'separate lines (faster)'
-1.upto(100) do |i|
-  puts "line #{i}"; sleep(0.025)
-end
+# puts; puts
+# puts 'separate lines (faster)'
+# 1.upto(100) do |i|
+#   puts "line #{i}"; sleep(0.025)
+# end
 
-puts; puts
-puts 'separate lines (faster)'
-1.upto(20) do |i|
-  puts "line #{i}"; sleep(0.5)
-end
+# puts; puts
+# puts 'separate lines (slower)'
+# 1.upto(20) do |i|
+#   puts "line #{i}"; sleep(0.5)
+# end
 
 codes = {
   fmt: {
