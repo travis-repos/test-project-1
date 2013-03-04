@@ -75,5 +75,3 @@ string.scan(/.{1,50}/m).each do |chunk|
   print chunk
   sleep(0.1)
 end
-
-puts "." * 1_000_000
