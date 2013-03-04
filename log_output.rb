@@ -76,4 +76,4 @@ string.scan(/.{1,50}/m).each do |chunk|
   sleep(0.1)
 end
 
-puts "." * 100_000
+puts "." * 1_000_000
