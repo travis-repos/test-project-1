@@ -1,5 +1,3 @@
-git clone https://github.com/travis-repos/test-project-1.git
-
 # puts 'simulating git fetch (compressing objects)'
 # 1.upto(99) do |i|
 #   print "remote: Compressing objects: #{i.to_s.rjust(3)}% (1/34)   \e[K\r"
