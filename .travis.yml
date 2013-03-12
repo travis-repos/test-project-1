@@ -24,8 +24,8 @@ notifications:
 
 script:
 #  - bundle exec rspec spec
+  - "git clone https://github.com/travis-repos/test-project-1.git"
   - rake
-  - echo "Svens got a lovely bunch of coconuts"
 
 before_script:
   - "echo $FOO"
