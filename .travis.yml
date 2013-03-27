@@ -7,7 +7,6 @@ rvm:
 branches:
   only: master
 notifications:
-  email: me@svenfuchs.com
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
