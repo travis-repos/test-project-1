@@ -18,4 +18,4 @@ matrix:
 # At max one secure envar decrypts, so we get the key iff
 # the build was initiated on a whitelisted fork or ""otherwise
 script:
-    - echo "$STORE_KEY1 $STORE_KEY2"
+    - printenv
