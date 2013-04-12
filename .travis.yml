@@ -1,6 +1,6 @@
 env:
   global:
-    - secure: "tnEAf34ZvnfNdM+q39+v9o/jNO8pBlT0v1fOzqjPxnCSDf8heZGowoC//N78\nRIg31ghSBujwF6vX0KNmqkp+YIoBbIQ3FV0RAfBvPjMTHb6gEIzNjKkit++O\nbRwY+DugYEsnTI02QzAeF+XffMFdcb0JAzu35LhUTnpGLtmAPL4="
+    - secure: "OHbE6y2cgUHxx8aHZG3NOImyy/0i2T5oNxuSeatG5DLEUEDlj1PdkYINyhP3\nruB8e7XMQgUfq43GnUlRKzmrEnKFwJZo6m4+NIogwTFljB0HfD07beSNL+UY\nws2s3uedtt97op41rj7ZZxIgCrhAjG+BA89dmH3eV8DwWj7eh6Q="
   matrix:
     - FOO=true BAR=False
 
