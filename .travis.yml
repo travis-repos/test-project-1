@@ -2,12 +2,12 @@ env:
   global:
     - secure: "EDEQtSbwerzDW8cUYwmc6g3W3/laaJ1ReYhhWv+AY/SrVZG7SdqatwVkX4TQ\nqba3jeBWqOWaQzubDwq10JqFMQ4dTLRayUZ3vZXNDLtAqi/IbY10r+kXdutb\nO4kbFw6X7/pZyGxKRLNWKAjQyVLaE/FAviDhCy097thQ18Usmrg="
     - secure: "r2jM0hr8LN/oIxbqZps4ExqVcpD9i4QVljhFqe96YJhbjlqkVDiKh512Yhkw\nLztqP9rxe0gUxBu+K4Bepq3Yjgk4EcJJxqXO8mB9WJq40kzWtcaIq5uu6tlH\nINa0/9kl46qGveizlAw/tjH8zg/2euqd/u9YVyZcNLiqKvgxKx4="
+  matrix:
+    - python: 2.7
+      env: FOO=true BAR=False
 
 matrix:
   include:
-    - python: 2.7
-      env: FOO=true BAR=False
-      # + STORE_KEY0 or STORE_KEY1, whatever decrypts
     - python: 2.7
       env: FAZ=true BOO=False
       # + STORE_KEY0 or STORE_KEY1, whatever decrypts
