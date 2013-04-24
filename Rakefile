@@ -1,6 +1,7 @@
 require 'rake' # we need rake!!
 
 task :test do
+
   load 'log_output.rb'
   # 1.upto 100 do
   #   print '.'
