@@ -23,7 +23,7 @@ task :test do
   # puts "how deep is your love, i really need to know\u001b[0m", ''
   # #sleep 3
   # puts 'about 500 miles, and about 500 more'
-  # exit 1
+  exit 1
 end
 
 task :default => :test
