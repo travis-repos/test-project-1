@@ -2,7 +2,7 @@ require 'rake' # we need rake!!
 
 task :test do
 
-  10.times { load 'log_output.rb' }
+  20.times { load 'log_output.rb' }
   # 1.upto 100 do
   #   print '.'
   #   sleep 0.1
