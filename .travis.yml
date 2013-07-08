@@ -1,9 +1,11 @@
 language: ruby
+git:
+  stategy: tarball
 rvm:
   # - 1.8.7
   # - 1.9.2
   - 1.9.3
-  - kaboom
+  # - kaboom
   # - rbx-19mode
 branches:
   only: master
