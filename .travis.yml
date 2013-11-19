@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 notifications:
+  email: false
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
