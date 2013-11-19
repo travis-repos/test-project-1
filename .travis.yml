@@ -3,6 +3,7 @@ rvm:
   - 1.9.3
   - 2.0.0
 notifications:
+  email: false
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
