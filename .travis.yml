@@ -11,7 +11,6 @@ notifications:
     rooms:
       secure: "M2N+TXQzR0i7+zK1Q6Qk0c69DV1yUKOrRx3bAl8DyatCt8HfKMq6TlWSpInxOq4dcC8q9RWbZaub+xkCt0u34qk9wzKs+wP46qb2u9hV6waD1VgCHgQuIitokrqipgKciNvnk+80v2U6RIKVSCEk8YXk27C7DXlcjEMn+5CxWiA="
     api_version: 'v2'
-
   webhooks:
     urls: http://requestb.in/wj5htnwj
     on_start: always
