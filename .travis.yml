@@ -7,7 +7,10 @@ notifications:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
   flowdock: e533e9b0984a1cc7650579ab7aaab158
-  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
+  hipchat: 
+    rooms:
+      - "a21b28b2863acbee3ccb17da36a173@Travis CI"
+    api_version: 'v2'
   webhooks:
     urls: http://requestb.in/wj5htnwj
     on_start: always
@@ -38,3 +41,4 @@ after_test:
 env:
   global:
     - secure: "W3U0VAIIvZqj4pNuKrbqdpC0FWELhnMpJZviZsoIayO9pX5ALmntkWSawh5d\nk5+ckAqGroeWkLpHDRC0Cxe0iVNSwunqngnKXMSz98H2Tx5lHv1nM52tALew\nlWmqzNJbaMgnAbUhq7HvV798PM+0Dihqy9ha6yEsFaSvc2G69Ts="
+
