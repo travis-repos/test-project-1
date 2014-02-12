@@ -9,7 +9,7 @@ notifications:
   flowdock: e533e9b0984a1cc7650579ab7aaab158
   hipchat: 
     rooms:
-      secure: "M2N+TXQzR0i7+zK1Q6Qk0c69DV1yUKOrRx3bAl8DyatCt8HfKMq6TlWSpInxOq4dcC8q9RWbZaub+xkCt0u34qk9wzKs+wP46qb2u9hV6waD1VgCHgQuIitokrqipgKciNvnk+80v2U6RIKVSCEk8YXk27C7DXlcjEMn+5CxWiA="
+      secure: "KkavbbzdtD7MVGzMCEr15ePv7D9St2nlLrbAs0WLkoiIOypT8QQEYRVzstmPMwiaQA9ZY3qjM/+iSYJmykoNj/FWYiJOOfIAZVuzp03kND5X9wtb47CXin4wRYRORlvar9HDH0IlJznoSCi9GYF8R8C+paQroPgDV1lsNafjJjI="
     api_version: 'v2'
   webhooks:
     urls: http://requestb.in/wj5htnwj
