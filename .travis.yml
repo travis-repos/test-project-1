@@ -9,8 +9,8 @@ notifications:
   flowdock: e533e9b0984a1cc7650579ab7aaab158
   hipchat: 
     rooms:
+      - "a21b28b2863acbee3ccb17da36a173@Travis CI"
       - 5S5j353NhQTzQSIYA7mLylQGg1E4QHJGBGbeSgVh@111525
-    api_version: 'v2'
 
   webhooks:
     urls: http://requestb.in/wj5htnwj
