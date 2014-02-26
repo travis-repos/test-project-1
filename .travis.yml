@@ -14,8 +14,8 @@ notifications:
     on_finish: always
 
 script:
-#  - bundle exec rspec spec
-  - rake
+  - ./error_out
+  - echo "NEXT SCRIPT"
 
 before_script:
   - "echo 'Before script'"
