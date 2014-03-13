@@ -1,7 +1,8 @@
 language: ruby
 rvm:
-  - 1.9.3
   - 2.0.0
+cache: bundler
+
 notifications:
   email: false
   irc:
@@ -23,8 +24,8 @@ before_install:
   - sudo dpkg --install aerospike-client-c-3.0.30.ubuntu12.04.x86_64/aerospike-client-c-3.0.30.ubuntu12.04.x86_64.deb
 
 script:
-#  - bundle exec rspec spec
-  - rake
+  - ./error_out
+  - echo "NEXT SCRIPT"
 
 before_script:
   - "echo 'Before script'"
