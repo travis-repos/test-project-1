@@ -24,6 +24,7 @@ before_install:
   - sudo dpkg --install aerospike-client-c-3.0.30.ubuntu12.04.x86_64/aerospike-client-c-3.0.30.ubuntu12.04.x86_64.deb
 
 script:
+  - travis_terminate 2
   - ./error_out
   - echo "NEXT SCRIPT"
 
