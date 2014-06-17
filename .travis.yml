@@ -2,7 +2,10 @@ language: ruby
 rvm:
   - ruby-head
 notifications:
-  email: me@svenfuchs.com
+  email: 
+    recipients: me@svenfuchs.com
+    on_start: always
+    on_finish: always
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
