@@ -1,6 +1,6 @@
 language: ruby
-rvm:
-  - ruby-head
+# rvm:
+#   - ruby-head
 notifications:
   email: 
     recipients: me@svenfuchs.com
