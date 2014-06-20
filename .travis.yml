@@ -1,51 +1,6 @@
 language: ruby
 rvm:
   - ruby-2.1
-cache: bundler
+  - ruby-2.0
 
-notifications:
-  email: false
-  irc:
-    channels: "irc.freenode.org#travisstaging"
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
-  flowdock: e533e9b0984a1cc7650579ab7aaab158
-  hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
-  webhooks:
-    urls: http://requestb.in/wj5htnwj
-    on_start: always
-    on_finish: always
-
-before_install:
-  - wget http://www.aerospike.com/community_downloads/3.0.39/aerospike-community-server-3.0.39-ubuntu12.04.tgz
-  - tar -xf aerospike-community-server-3.0.39-ubuntu12.04.tgz
-  - sudo dpkg --install aerospike-community-server-3.0.39-ubuntu12.04/aerospike-community-server-3.0.39.ubuntu12.04.x86_64.deb
-  - wget http://www.aerospike.com/client_downloads/c/3.0.30/aerospike-client-c-3.0.30.ubuntu12.04.x86_64.tgz
-  - tar -xf aerospike-client-c-3.0.30.ubuntu12.04.x86_64.tgz
-  - sudo dpkg --install aerospike-client-c-3.0.30.ubuntu12.04.x86_64/aerospike-client-c-3.0.30.ubuntu12.04.x86_64.deb
-
-script:
-  - travis_terminate 2
-  - ./error_out
-  - echo "NEXT SCRIPT"
-
-before_script:
-  - "echo 'Before script'"
-  - "sudo service postgresql restart"
-
-after_script:
-  - "echo 'After script'"
-
-after_success:
-  - "echo 'After success'"
-
-after_failure:
-  - "echo 'After failure'"
-
-after_test:
-  - "echo 'Yupi'"
-  - "echo 'Splendid'"
-  - printenv
-
-env:
-  global:
-    - secure: "W3U0VAIIvZqj4pNuKrbqdpC0FWELhnMpJZviZsoIayO9pX5ALmntkWSawh5d\nk5+ckAqGroeWkLpHDRC0Cxe0iVNSwunqngnKXMSz98H2Tx5lHv1nM52tALew\nlWmqzNJbaMgnAbUhq7HvV798PM+0Dihqy9ha6yEsFaSvc2G69Ts="
+script: sleep 120
