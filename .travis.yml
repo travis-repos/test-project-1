@@ -17,6 +17,7 @@ notifications:
     on_finish: always
 
 script:
+  - date
   - ./error_out
   - echo "NEXT SCRIPT"
 
