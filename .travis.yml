@@ -1,6 +1,10 @@
 language: ruby
+
 # rvm:
 #   - ruby-head
+
+cache: bundler
+
 notifications:
   email: 
     recipients: me@svenfuchs.com
