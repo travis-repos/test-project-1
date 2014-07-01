@@ -1,6 +1,7 @@
 language: ruby
-rvm:
-  - ruby-2.1
-  - ruby-2.0
 
-script: sleep 120
+os:
+ - osx
+ - linux
+
+script: printenv
