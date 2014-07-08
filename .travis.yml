@@ -12,7 +12,7 @@ notifications:
     on_finish: always
   irc:
     channels: "irc.freenode.org#travisstaging"
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message}"
+    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message} - AM I RIGHT?"
   # flowdock: e533e9b0984a1cc7650579ab7aaab158
   # hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
   webhooks:
