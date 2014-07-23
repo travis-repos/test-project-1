@@ -3,22 +3,5 @@ language: ruby
 # rvm:
 #   - ruby-head
 
-cache: bundler
-
-notifications:
-  email:
-    recipients: me@svenfuchs.com
-    on_start: always
-    on_finish: always
-  irc:
-    channels: "irc.freenode.org#travisstaging"
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message} - AM I RIGHT?"
-  # flowdock: e533e9b0984a1cc7650579ab7aaab158
-  # hipchat: "a21b28b2863acbee3ccb17da36a173@Travis CI"
-  webhooks:
-    urls: http://requestb.in/x6g8i2x6
-    on_start: always
-    on_finish: always
-
 script:
-  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ans"
+  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ansi
