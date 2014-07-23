@@ -6,6 +6,7 @@ language: ruby
 cache: bundler
 
 notifications:
+  email: false
   # email:
   #   recipients: me@svenfuchs.com
   #   on_start: always
