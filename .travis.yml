@@ -21,28 +21,4 @@ notifications:
     on_finish: always
 
 script:
-  - date
-  - ./error_out
-  - echo "NEXT SCRIPT!!"
-
-before_script:
-  - "echo 'Before script!!'"
-  - "sudo service postgresql restart"
-
-after_script:
-  - "echo 'After script'"
-
-after_success:
-  - "echo 'After success'"
-
-after_failure:
-  - "echo 'After failure'"
-
-after_test:
-  - "echo 'Yupi'"
-  - "echo 'Splendid'"
-  - printenv
-
-env:
-  global:
-    - "GLOBAL_VAR=foo"
+  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ans"
