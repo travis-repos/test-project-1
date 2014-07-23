@@ -4,4 +4,4 @@ language: ruby
 #   - ruby-head
 
 script:
-  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ansi
+  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ans
