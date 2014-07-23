@@ -6,10 +6,10 @@ language: ruby
 cache: bundler
 
 notifications:
-  email:
-    recipients: me@svenfuchs.com
-    on_start: always
-    on_finish: always
+  # email:
+  #   recipients: me@svenfuchs.com
+  #   on_start: always
+  #   on_finish: always
   irc:
     channels: "irc.freenode.org#travisstaging"
     template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message} - AM I RIGHT?"
@@ -22,7 +22,7 @@ notifications:
 
 script:
   - date
-  - ./error_out
+  - travis_retry ./error_out
   - echo "NEXT SCRIPT!!"
 
 before_script:
