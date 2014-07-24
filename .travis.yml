@@ -3,5 +3,8 @@ language: ruby
 # rvm:
 #   - ruby-head
 
-script:
-  - curl http://mewbies.com/geek_fun_files/img2txt/mewbie.jpg_caca_img2txt_to_ans.ans
+env:
+  global:
+    - FOO: { secure: "KoF7HOrw0pm5KmW4gaNFVfQdwZMMNLd9hL3+4gXKm0EA8QnfCDDSUxRMRR2AuVRHqs8o+c4LSbjUdDqSw9XBB2vI0jqBWFM9q0czxHb2HL4Tu4b/MZ9LpZO1WIRFFVgcqKNyOqInPurLqajJMqUW88IDnsw6VyKvU/fUa2SOH9M=" }
+
+script: echo $FOO
