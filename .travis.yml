@@ -27,6 +27,8 @@ script:
   - echo "NEXT SCRIPT!!"
   - export EXPORTED_DURING_SCRIPT="exported during script, works with travis_cmd still"
   - echo $EXPORTED_DURING_SCRIPT
+  - echo $(echo "$EXPORTED_DURING_SCRIPT, even with an extra subshell")
+  - echo $(echo "redirecting stdout" > ./foo && cat ./foo) > ./bar && cat ./bar
 
 before_script:
   - "echo 'Before script!!'"
