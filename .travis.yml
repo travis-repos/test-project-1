@@ -25,7 +25,8 @@ script:
   - date
   - travis_retry ./error_out
   - echo "NEXT SCRIPT!!"
-  - export EXPORTED_DURING_SCRIPT="exported during script, works with travis_cmd still" && echo $EXPORTED_DURING_SCRIPT
+  - export EXPORTED_DURING_SCRIPT="exported during script, works with travis_cmd still"
+  - echo $EXPORTED_DURING_SCRIPT
 
 before_script:
   - "echo 'Before script!!'"
