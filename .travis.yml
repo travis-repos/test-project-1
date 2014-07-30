@@ -1,10 +1,15 @@
 language: ruby
 
-# rvm:
-#   - ruby-head
-
 env:
-  global:
-    - FOO: { secure: "KoF7HOrw0pm5KmW4gaNFVfQdwZMMNLd9hL3+4gXKm0EA8QnfCDDSUxRMRR2AuVRHqs8o+c4LSbjUdDqSw9XBB2vI0jqBWFM9q0czxHb2HL4Tu4b/MZ9LpZO1WIRFFVgcqKNyOqInPurLqajJMqUW88IDnsw6VyKvU/fUa2SOH9M=" }
+  matrix:
+    - FOO=bar
+    - FOO=baz
+    - FOO=foo
+    - FOO=foo1
+    - FOO=foo2
+    - FOO=foo3
+    - FOO=foo4
+    - FOO=foo5
+    - FOO=foo6
 
-script: echo $FOO
+script: sleep 120
