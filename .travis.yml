@@ -1,15 +1,4 @@
 language: ruby
 
-env:
-  matrix:
-    - FOO=bar
-    - FOO=baz
-    - FOO=foo
-    - FOO=foo1
-    - FOO=foo2
-    - FOO=foo3
-    - FOO=foo4
-    - FOO=foo5
-    - FOO=foo6
-
-script: sleep 120
+script: echo foo
+sudo: false
