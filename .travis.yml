@@ -12,4 +12,6 @@ env:
     - FOO=foo5
     - FOO=foo6
 
-script: sleep 120
+script: sleep 10
+
+sudo: false
