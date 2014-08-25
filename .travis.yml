@@ -1,17 +1,13 @@
 language: ruby
 
 env:
-  matrix:
-    - FOO=bar
-    - FOO=baz
-    - FOO=foo
-    - FOO=foo1
-    - FOO=foo2
-    - FOO=foo3
-    - FOO=foo4
-    - FOO=foo5
-    - FOO=foo6
+  global:
+    - "COUNTER=0"
 
-script: sleep 10
+script: "while [  $COUNTER -lt 1000 ]; do \
+             echo -n $COUNTER \
+             let COUNTER=COUNTER+1 \
+             sleep 1 \
+         done"
 
 sudo: false
