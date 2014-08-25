@@ -5,7 +5,7 @@ env:
     - "COUNTER=0"
 
 script: "while [  $COUNTER -lt 1000 ]; do \
-             echo -n $COUNTER \
+             echo -n '$COUNTER \t' \
              let COUNTER=COUNTER+1 \
              sleep 1 \
          done"
