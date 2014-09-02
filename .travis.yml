@@ -5,4 +5,4 @@ script:
  - ./configure
  - make
  - mv min*d m
- - ./m
+ - eval "./m"
