@@ -1,7 +1,4 @@
 language: ruby
-# YO!!
-# rvm:
-#   - ruby-head
 
 cache: bundler
 
