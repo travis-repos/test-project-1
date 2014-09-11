@@ -1,4 +1,4 @@
-require 'rake' # we need rake!!!
+require 'rake' # we need rake!!
 
 task :test do
   1.upto 20 do
