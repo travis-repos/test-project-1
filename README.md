@@ -1,1 +1,1 @@
-A test dummy repository for testing Travis CI.
+A test dummy repository for testing Travix CI.
