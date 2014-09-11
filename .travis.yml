@@ -1,4 +1,5 @@
 language: php
+
 script:
  - chmod a+x autogen.sh
  - ./autogen.sh
