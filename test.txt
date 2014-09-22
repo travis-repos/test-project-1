@@ -1,3 +1,4 @@
 foobar
 fobar
 foo
+foo
