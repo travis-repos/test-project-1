@@ -1,5 +1,8 @@
 language: ruby
 
+tags:
+  except: 'foobar'
+
 env:
   global:
     - "COUNTER=0"
