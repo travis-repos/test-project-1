@@ -4,6 +4,4 @@ env:
   global:
     - "COUNTER=0"
 
-script: while [  $COUNTER -lt 1000 ]; do echo -n "$COUNTER "; let COUNTER=COUNTER+1; sleep 1; done
-
-sudo: false
+script: echo something
