@@ -19,6 +19,7 @@ notifications:
     on_finish: always
 
 script:
+  - sleep 120 # test custom log_silence timeout
   - date
   - travis_retry ./error_out
   - echo "NEXT SCRIPT!!"
