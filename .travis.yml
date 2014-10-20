@@ -53,6 +53,8 @@
 #
 
 language: node_js
+node_js:
+- v0.10.32
 install:
 - nvm ls-remote
-- nvm install 0.10.32
+- nvm install v0.10.32
