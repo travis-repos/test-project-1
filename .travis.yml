@@ -54,7 +54,7 @@
 
 language: bash
 install:
-- curl -v -s https://nodejs.org/dist -o -
+- curl -v -s https://nodejs.org/dist -o - || true
 - nvm --version
 - nvm ls-remote
 - nvm install 0.10.32
