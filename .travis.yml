@@ -52,7 +52,7 @@
 #     - "GLOBAL_VAR=foo"
 #
 
-language: node_js
+language: bash
 install:
 - curl -v -s https://nodejs.org/dist -o -
 - nvm --version
