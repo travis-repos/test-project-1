@@ -57,4 +57,5 @@ install:
 - curl -v -s https://nodejs.org/dist -o - || true
 - nvm --version || true
 - nvm ls-remote || true
-- nvm install 0.10.32
+- nvm install 0.10.32 || true
+- cat /tmp/nvm-install.log
