@@ -1,10 +1,7 @@
-language: ruby
+language: node_js
 
-tags:
-  except: 'foobar'
+node_js:
+  - "0.10"
+  - "0.10.1"
 
-env:
-  global:
-    - "COUNTER=0"
-
-script: echo something
+script: echo foo
