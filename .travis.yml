@@ -6,9 +6,11 @@ setup: echo "foo"
 
 before_install:
   - bash before_install.sh
+  - source $(brew --prefix nvm)/nvm.sh
   - nvm install 0.10
   - node --version
   - npm --version
   - nvm --version
+  
 
 script: printenv
