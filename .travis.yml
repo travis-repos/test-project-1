@@ -2,8 +2,6 @@ os:
   - osx
   - linux
 
-setup: echo "foo"
-
 install:
   - test $TRAVIS_OS_NAME = "osx" && brew install nvm && source $(brew --prefix nvm)/nvm.sh || test $TRAVIS_OS_NAME = "linux"
   - nvm install 0.10
