@@ -2,4 +2,4 @@ os:
   - osx
   - linux
 
-script: sleep 120
+script: printenv
