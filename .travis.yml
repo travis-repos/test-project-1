@@ -1,9 +1,14 @@
 os:
   - osx
   - linux
-language: node_js
 
 setup: echo "foo"
 
-before_script: bash before_script.sh
+before_install:
+  - bash before_install.sh
+  - nvm install 0.10
+  - node --version
+  - npm --version
+  - nvm --version
+
 script: printenv
