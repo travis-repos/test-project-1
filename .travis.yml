@@ -2,4 +2,5 @@ os:
   - osx
   - linux
 
+before_script: bash before_script.sh
 script: printenv
