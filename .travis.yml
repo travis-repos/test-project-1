@@ -1,6 +1,9 @@
 os:
   - osx
   - linux
+language: node_js
+
+setup: echo "foo"
 
 before_script: bash before_script.sh
 script: printenv
