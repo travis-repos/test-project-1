@@ -1,2 +1,4 @@
-script: sleep 10
+language: ruby
+cache: bundler
+script: sleep 1
 sudo: false
