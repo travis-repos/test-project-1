@@ -1,2 +1,5 @@
-script: sleep 10
+branches:
+  only:
+    - master
+script: echo FOO
 sudo: false
