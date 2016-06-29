@@ -1,5 +1,3 @@
-branches:
-  only:
-    - master
-script: echo FOO
-sudo: false
+script: rvm list
+sudo: required
+dist: trusty
