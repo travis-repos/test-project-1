@@ -1,3 +1,2 @@
-script: rvm list
-sudo: required
-dist: trusty
+script: echo foo
+sudo: false
