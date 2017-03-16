@@ -7,6 +7,12 @@ language: ruby
 cache: bundler
 rvm:
 - 2.2
+env:
+  global:
+    - ENDPOINT=foo.bar
+    - SPECIAL=test
+  matrix:
+    - ENDPOINT=bar.baz TYPE=test
 notifications:
   email: false
   irc:
