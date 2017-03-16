@@ -54,6 +54,3 @@ after_test:
 - echo 'Yupi'
 - echo 'Splendid'
 - printenv
-env:
-  global:
-  - GLOBAL_VAR=foo
