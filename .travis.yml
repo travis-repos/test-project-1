@@ -1,56 +1,24 @@
-sudo: false
-addons:
-  ssh_known_hosts:
-  - bitbucket.org
-  - sammich.meatballhat.com
 language: ruby
-cache: bundler
-rvm:
-- 2.2
-env:
-  global:
-    - ENDPOINT=foo.bar
-    - SPECIAL=test
-  matrix:
-    - ENDPOINT=bar.baz TYPE=test
-notifications:
-  email: false
-  irc:
-    channels: irc.freenode.org#travisstaging
-    template: "[STAGING] %{repository} (%{commit}) %{build_url} : %{message} - AM
-      I RIGHT?"
-  webhooks:
-    urls: http://requestb.in/x6g8i2x6
-    on_start: always
-    on_finish: always
-  hipchat:
-    server:
-      secure: O9+nXVHXj131FJfV7a4tlw+4uO3BfmtaylgKCkUnfC9vTN82SWZxudfFv6AUV533k/fqkCSQ1LbywllvZrH4iGlAd56jUwjmt6YDRjmuoH70/xwaiPj9XjlZ7EhqyeXKDBJeXHfGKJr2K4MRPfMvCXE+66iq5FLrDFQA2JHFZRY=
-    rooms:
-      secure: Z/9PFTQnCjcAeWX+oW4q0ipVtPnfsbZUSx/XxcgkF3jp8v6UDZN/eAz1InVHE9VGBqB9jynSfiU5fWEfwzLqaloT5Qr1K7i/7+p2qxzQcBOSPRiWH6+SlWTpn97LsAPC1nM2OBxgL/kSy8L43zoZuHO0v6K8PFviEl54ZCAq2Do=
-install:
-- curl -v -s https://nodejs.org/dist -o - || true
-- nvm --version || true
-- nvm ls-remote || true
-- nvm install 0.10.32 || true
-script:
-- date
-- travis_retry ./error_out
-- echo "NEXT SCRIPT!!"
-- export EXPORTED_DURING_SCRIPT="exported during script, works with travis_cmd still"
-- echo $EXPORTED_DURING_SCRIPT
-- echo $(echo "$EXPORTED_DURING_SCRIPT, even with an extra subshell")
-- echo $(echo "redirecting stdout" > ./foo && cat ./foo) > ./bar && cat ./bar
-before_script:
-- echo 'Before script!!'
-- sudo service postgresql restart
-after_script:
-- echo 'After script'
-after_success:
-- echo 'After success'
-after_failure:
-- echo 'After failure'
-after_test:
-- echo 'Yupi'
-- echo 'Splendid'
-- printenv
+matrix:
+  include:
+  - sudo: required
+    dist: trusty
+    env: QUEUE=gce DIST=trusty
+  - sudo: required
+    dist: precise
+    env: QUEUE=gce DIST=precise
+  - sudo: false
+    dist: trusty
+    group: beta
+    env: QUEUE=ec2 DIST=trusty
+  - sudo: false
+    dist: precise
+    env: QUEUE=docker DIST=precise
+  - os: osx
+    rvm: default
+    env: QUEUE=macstadium6 IMAGE=default
+  - os: osx
+    osx_image: xcode7
+    rvm: default
+    env: QUEUE=macstadium6 IMAGE=xcode7
+script: git --version
