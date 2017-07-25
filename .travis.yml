@@ -4,3 +4,8 @@ sudo: false
 env:
   - FOO=1
   - FOO=2
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: FOO=2
