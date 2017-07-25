@@ -1,11 +1,8 @@
-script: echo foo
 sudo: false
 
-env:
-  - FOO=1
-  - FOO=2
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - env: FOO=2
+jobs:
+  include:
+    - stage: test
+      script: echo foo
+    - stage: deploy
+      script: echo foo
