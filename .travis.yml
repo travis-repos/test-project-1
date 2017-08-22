@@ -1,6 +1,2 @@
 script: echo foo
 sudo: false
-
-env:
-  - FOO=1
-  - FOO=2
